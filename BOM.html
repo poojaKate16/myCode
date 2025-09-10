@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<button onclick="screenaction()"> screen info</button>
+<p class="demo"></p>
+<script>
+function screenaction(){
+document.getElementsByClassName("demo")[0].innerHTML = 
+" Screen width is " + screen.width    +
+"  \n Screen height is" +screen.height    +
+" \n  Screen Color Depth: " + screen.colorDepth+
+"   Screen Pixel Depth: " + screen.pixelDepth;
+}
+
+
+
+</script>
+
+</body>
+</html>
