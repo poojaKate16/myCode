@@ -1,0 +1,59 @@
+Q. What is Exception?
+A. The exception is unwanted situation due to which the program terminates without giving the expected output.
+
+Q. What is Exception Handling?
+A. To manage or tackle the situation
+
+Q. What is the Need of Exception Handling?
+A. The Exception is Handled so as to reduce the effect of Exception on the program.
+
+Q. Types of Exceptions
+A. Checked & Unchecked
+Checked Exceptions= Compile time Exceptions
+Unchecked Exceptions= Runtime Exceptions
+
+Q. What is Exception Hierarchy?
+A. Throwable class -> Exception class -> Multiple child classes
+
+Q. Which are the keywords involved in Exception Handling?
+A. try catch finally throw throws
+
+Note:
+The try, catch and finally keywords come with the block.
+
+try block: Risky code
+catch block: Back-up functionality code OR Exception Handling code
+finally block: Code that needs to be executed by default
+
+For example:
+	try
+	{
+		System.out.println(5/5); // Gives output as 1
+//		System.out.println(5/0);// Throws Exception
+	}
+	catch(Exception e)
+	{
+		System.out.println("Bad Maths!");
+	}
+	finally
+	{
+		System.out.println("Bye!");
+	}
+
+Without Exception Handling:
+We get the entire exception message in the console in red color. It might be meaningless for the non-technical person like end user.
+
+With Exception Handling:
+We get some sophisticated message to inform the end user what has happened.
+
+With and Without Exception Handling, in both the cases, we never get the output of the line which was wrong.
+
+With and Without Exception Handling, in both the cases, the problem is not completely solved!
+
+It's just that, the Exception Handling makes the effect of that problem lesser.
+
+Tasks:
+
+1. WAP to accept the number from the user and print its square. Handle the appropriate exception if the user is entering the number as three in stead of 3.
+
+2. WAP to accept the 2 numbers from the user and print its division. Handle the appropriate exception if the user is entering second number as zero.  Print infinity in that case.
